@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+app.py	../web_app_example/app.py	1;"	kind:file	line:1
+app_first.py	../web_app_example/app_first.py	1;"	kind:file	line:1
+conn	../web_app_example/setup_db.py	/^conn = sqlite3.connect('todo.db') # Warning: This file is created in the current directory$/;"	kind:variable	line:2
+conn	../week_2/week2_class_1.py	/^conn = sqlite3.connect('example.db')$/;"	kind:variable	line:3
+index	../web_app_example/app_first.py	/^def index(name):$/;"	kind:function	line:4
+request	../web_app_example/app_first.py	/^from bottle import route, run, template, request$/;"	kind:namespace	line:1
+route	../web_app_example/app.py	/^from bottle import route, run, template$/;"	kind:namespace	line:2
+route	../web_app_example/app_first.py	/^from bottle import route, run, template, request$/;"	kind:namespace	line:1
+run	../web_app_example/app.py	/^from bottle import route, run, template$/;"	kind:namespace	line:2
+run	../web_app_example/app_first.py	/^from bottle import route, run, template, request$/;"	kind:namespace	line:1
+setup_db.py	../web_app_example/setup_db.py	1;"	kind:file	line:1
+sqlite3	../web_app_example/app.py	/^import sqlite3$/;"	kind:namespace	line:1
+sqlite3	../web_app_example/setup_db.py	/^import sqlite3$/;"	kind:namespace	line:1
+sqlite3	../week_2/week2_class_1.py	/^import sqlite3$/;"	kind:namespace	line:1
+sqlite_test.py	../sqlite_test.py	1;"	kind:file	line:1
+template	../web_app_example/app.py	/^from bottle import route, run, template$/;"	kind:namespace	line:2
+template	../web_app_example/app_first.py	/^from bottle import route, run, template, request$/;"	kind:namespace	line:1
+tensorflow	../week_2/week2_class_1.py	/^import tensorflow$/;"	kind:namespace	line:2
+todo_list	../web_app_example/app.py	/^def todo_list():$/;"	kind:function	line:5
+week2_class_1.py	../week_2/week2_class_1.py	1;"	kind:file	line:1
+x	../week_2/week2_class_1.py	/^x=3/;"	kind:variable	line:6
