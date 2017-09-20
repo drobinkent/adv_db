@@ -7,15 +7,17 @@
 app.py	../app.py	1;"	kind:file	line:1
 app_first.py	../app_first.py	1;"	kind:file	line:1
 conn	../setup_db.py	/^conn = sqlite3.connect('todo.db') # Warning: This file is created in the current directory$/;"	kind:variable	line:2
+debug	../app_first.py	/^from bottle import route, run,debug, template, request$/;"	kind:namespace	line:1
 index	../app_first.py	/^def index(name):$/;"	kind:function	line:4
-request	../app_first.py	/^from bottle import route, run, template, request$/;"	kind:namespace	line:1
+new_item	../app_first.py	/^def new_item():$/;"	kind:function	line:18
+request	../app_first.py	/^from bottle import route, run,debug, template, request$/;"	kind:namespace	line:1
 route	../app.py	/^from bottle import route, run, template$/;"	kind:namespace	line:2
-route	../app_first.py	/^from bottle import route, run, template, request$/;"	kind:namespace	line:1
+route	../app_first.py	/^from bottle import route, run,debug, template, request$/;"	kind:namespace	line:1
 run	../app.py	/^from bottle import route, run, template$/;"	kind:namespace	line:2
-run	../app_first.py	/^from bottle import route, run, template, request$/;"	kind:namespace	line:1
+run	../app_first.py	/^from bottle import route, run,debug, template, request$/;"	kind:namespace	line:1
 setup_db.py	../setup_db.py	1;"	kind:file	line:1
 sqlite3	../app.py	/^import sqlite3$/;"	kind:namespace	line:1
 sqlite3	../setup_db.py	/^import sqlite3$/;"	kind:namespace	line:1
 template	../app.py	/^from bottle import route, run, template$/;"	kind:namespace	line:2
-template	../app_first.py	/^from bottle import route, run, template, request$/;"	kind:namespace	line:1
+template	../app_first.py	/^from bottle import route, run,debug, template, request$/;"	kind:namespace	line:1
 todo_list	../app.py	/^def todo_list():$/;"	kind:function	line:5
