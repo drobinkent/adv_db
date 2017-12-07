@@ -1,0 +1,49 @@
+Create Database:
+# use rest_zip_db // If db not exists creates db
+
+
+Import from json
+# mongoimport --db rest_zip_db --collection restaurants --file restaturant.json //Inserts all data from .json file to "restaurants" collection
+                                                                                //inside rest_zip_db
+#mongoimport --db rest_zip_db --collection zipcodes --file zipcode.json  // Insertion for zipocodes
+
+
+
+Show current DB:
+#db
+
+change current db:
+#use rest_zip_db //change surrect db to rest_sip_db
+
+Show collections inside the db
+#show collections
+
+Create collections:
+#db.createCollection("people", { size: 2147483648 } ) //The following command simply pre-allocates a 2-gigabyte, 
+                                                        //uncapped collection named people:
+
+
+MongoDB CRUD Operations --> https://docs.mongodb.com/v3.4/crud/
+
+
+Show everything in the collection
+#db.restaurants.find()
+
+Insert one record in restaurant collection
+#db.restaurants.insertOne({grade : "Z"})
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("5a28dba0406085f799e51839")
+}
+
+Find the inserted data to ensure:
+#db.restaurants.find({grade : "Z"})
+{ "_id" : ObjectId("5a28dba0406085f799e51839"), "grade" : "Z" }
+
+inserting many
+#db.restaurants.insertMany({grade : "Z"}, {grade : "Y"})
+
+
+
+
+                                                   
