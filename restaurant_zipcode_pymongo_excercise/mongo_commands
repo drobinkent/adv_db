@@ -22,7 +22,7 @@ Create collections:
 #db.createCollection("people", { size: 2147483648 } ) //The following command simply pre-allocates a 2-gigabyte, 
                                                         //uncapped collection named people:
 
-
+====================================================================================================================================================
 MongoDB CRUD Operations --> https://docs.mongodb.com/v3.4/crud/
 
 
@@ -42,6 +42,12 @@ Find the inserted data to ensure:
 
 inserting many
 #db.restaurants.insertMany({grade : "Z"}, {grade : "Y"})
+
+Query:
+https://docs.mongodb.com/v3.4/tutorial/query-documents/
+
+Update and Delete:
+https://docs.mongodb.com/v3.4/tutorial/remove-documents/
 
 
 
