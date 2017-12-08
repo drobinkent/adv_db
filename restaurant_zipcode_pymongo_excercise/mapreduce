@@ -9,3 +9,13 @@ db.collection.mapReduce(
       limit: number
    }
 )
+
+
+
+ db.zipcodes.mapReduce(function(){emit(this._id,this.pop);},
+ function(key,values){return Array.sum(values);},
+ {
+	 query:{state: "MA"},
+	 out : "totalPopulation"
+ }
+)
