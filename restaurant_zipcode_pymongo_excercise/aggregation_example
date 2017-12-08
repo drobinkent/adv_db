@@ -285,3 +285,23 @@ The output of this aggregation operation is:
    .. code-block:: sql
 
 
+###################################
+This query saves the result in a temporary database.
+
+db.zipcodes.aggregate( { $group:
+	                            { _id: { state: "$state", city: "$city" },
+	                              pop: { $sum: "$pop" } } },
+	                          { $sort: { pop: 1 } },
+				{ $match : {pop : { $gte : 10*1000 } } },
+	                          { $group:
+	                            { _id : "$_id.state",
+	                              biggestCity:  { $last: "$_id.city" },
+	                              biggestPop:   { $last: "$pop" },
+	                              smallestCity: { $first: "$_id.city" },
+	                              smallestPop:  { $first: "$pop" } 
+				    } 
+				  },
+                       {$out:"tester_max_min"}
+
+)
+
